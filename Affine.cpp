@@ -3,14 +3,13 @@
 
 using namespace std;
 
-// Fungsi untuk mencari invers modular (menggunakan algoritma Euclidean)
 int modInverse(int a, int m) {
     for (int x = 1; x < m; x++) {
         if ((a * x) % m == 1) {
             return x;
         }
     }
-    return -1; // Invers modular tidak ditemukan
+    return -1; 
 }
 
 // Fungsi untuk mengenkripsi teks dengan Affine Cipher
@@ -81,7 +80,7 @@ int main() {
             cout << "Masukkan nilai b (bilangan bulat): ";
             cin >> b;
 
-            cin.ignore(); // Menghapus karakter newline dari buffer
+            cin.ignore(); 
 
             cout << "Masukkan teks yang akan dienkripsi: ";
             getline(cin, text);
@@ -99,7 +98,7 @@ int main() {
             cout << "Masukkan nilai b (bilangan bulat): ";
             cin >> b;
 
-            cin.ignore(); // Menghapus karakter newline dari buffer
+            cin.ignore(); 
 
             cout << "Masukkan teks yang akan didekripsi: ";
             getline(cin, text);
