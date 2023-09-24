@@ -134,19 +134,19 @@ int main() {
 
         if (pilihan == 1) {
             string teksBiasa;
-            cout << "\nMasukkan plain text (huruf besar): ";
+            cout << "\nMasukkan plain text (huruf besar) (akan ada 1 huruf tambahan jadi abaikan saja): ";
             cin >> teksBiasa;
 
             string cipherText = enkripsi(teksBiasa, matriksKunci);
-            cout << "cipherText: " << cipherText << endl;
+            cout << "cipherText (abaikan 1 huruf terakhir): " << cipherText << endl;
         }
         else if (pilihan == 2) {
             string cipherText;
-            cout << "\nMasukkan cipherText (huruf besar): ";
+            cout << "\nMasukkan cipherText (huruf besar)(dibutuhkan 1 huruf tambahan): ";
             cin >> cipherText;
 
             string teksTerdekripsi = dekripsi(cipherText, matriksKunci);
-            cout << "Teks terdekripsi: " << teksTerdekripsi << endl;
+            cout << "Teks terdekripsi (abaikan 1 huruf terakhir): " << teksTerdekripsi << endl;
         }
         else if (pilihan == 3) {
             vector<vector<int>> matriksInvers;
